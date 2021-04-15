@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>RDD</title>
+</head>
+<body>
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#"><h1><span>H</span>ome</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#intro" data-after="Home">Introducción</a></li>
+            <li><a href="#obj" data-after="Service">Objetivos</a></li>
+            <li><a href="#marco" data-after="Projects">Marco</a></li>
+            <li><a href="#desa" data-after="About">Desarrollo</a></li>
+            <li><a href="#conc" data-after="Contact">Conclusión</a></li>
+            <li><a href="#ref" data-after="Contact">Referencias</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Práctica 3<span></span></h1>
+        <h1>Aplicación de<span></span></h1>
+        <h1>Red Local<span></span></h1>
+        <a href="index.html" type="button" class="cta">Regresar a la materia</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects container" id="intro">
+      <div class="projects-header">
+        <h1 class="section-title"><span>In</span>troducción</h1>
+        <p>La correcta dsitribución y configuración de los componentes de una red determina 
+          si la comunicación es funcional entre los dispositivos finales de cierta red. En 
+          instituciones como universidades u oficinas el acceso a los recursos compartidos 
+          trae beneficios a los usuarios quienes requieren de una fluidez de la información 
+          y la seguridad de la comunicación entre los dispositivos.</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="projects container" id="obj">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Ob</span>jetivos</h1>
+      </div>
+      <p>Objetivo general</p>
+      <p>Aplicar los elementos que se utilizan para configurar una red local y el acceso a recursos de un equipo en red.</p>
+      <p>Objetivos específicos</p>
+      <p>Utilizando el programa de Packet Tracer de Cisco, simula una red de aplicación, asignando a las computadoras las IP pertenecientes a la red 192.168.0.0, utilizando la ventana de comandos utiliza la función ping para verificar la comunicación entre cada una de las computadoras. En una escuela se necesitan desarrollar una red de computadoras, se cuenta con 3 salas de cómputo con 10 computadoras cada uno, y una sala de administración con 5 computadoras para el personal administrativo. Los salones de cómputo se encuentran a más 100 metros de la oficina administrativa. La oficina administrativa posee un router para la conexión a internet de todos los equipos de la escuela. Utiliza repetidores y switches necesarios para desarrollar la red.</p>
+      <p>Elabora un video donde se compruebe el funcionamiento de 5 dispositivos comunicados entre sí.</p>
+      <p>Elabora una tabla comparativa con la distribución física e IP de cada equipo (computadora, repetidor, switch y router).</p>
+    </div>
+    <div class="projects container" id="marco">
+      <div class="projects-header">
+        <h1 class="section-title">Mar<span>co</span></h1>
+        <p>Una <b>red de área local</b>(LAN) es una red de computadoras que abarca un área reducida 
+          a una casa, un departamento o un edificio.</p>
+        <p>Un <b>enrutador</b> (del inglés router) o encaminador,​ es un dispositivo que permite 
+          interconectar computadoras que funcionan en el marco de una red. Su función es la 
+          de establecer la ruta que destinará a cada paquete de datos dentro de una red 
+          informática.</p>
+        <p>La <b>topología mixta</b> es un tipo de topología de red que utiliza dos o más 
+          topologías de red diferentes. Esta topología contiene una combinación de las distintas 
+          topologías existentes. En la topología mixta la red se divide en diferentes segmentos.</p>
+        <p><b>Packet Tracer</b> de Cisco es un programa de simulación de redes que permite a los 
+          estudiantes experimentar con el comportamiento de la red</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="projects container" id="desa">
+      <div class="projects-header">
+        <h1 class="section-title">Des<span>a</span>rollo</h1>
+        <p>Una vez configurada la red con sus distintos segmentos según la habitación a la que 
+          pertenezcan, se realizaron pruebas del correcto funcionamiento de la comunicación entre 
+          las computadoras como se muestra en el video.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DjNH_7zfuEE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>La tabla siguiente muestra cada elemento de la red además de su configuración de IP y 
+          la ubicación teórica en la que se estableció el elemento de la red</p>
+        <table class="prac" width="85%">
+          <tr>
+            <th>Elemento de red</th>
+            <th>Ubicación</th>
+            <th>IP</th>
+          </tr>
+          <tr>
+            <td>Router-PT Router0</td>
+            <td>Sala de Administración</td>
+            <td>192.168.0.1</td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch0</td>
+            <td>Sala de Administración</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch1</td>
+            <td>Sala de Administración</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch2</td>
+            <td>Sala de Administración</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch3</td>
+            <td>Sala de Administración</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>PC-PT PC0</td>
+            <td>Sala de Administración</td>
+            <td>192.168.0.2</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC1</td>
+            <td>Sala de Administración</td>
+            <td>192.168.0.3</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC2</td>
+            <td>Sala de Administración</td>
+            <td>192.168.0.4</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC3</td>
+            <td>Sala de Administración</td>
+            <td>192.168.0.5</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC4</td>
+            <td>Sala de Administración</td>
+            <td>192.168.0.6</td>
+          </tr>
+          <tr>
+            <td>Repeater-PT Repeater0</td>
+            <td>Pasillo</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch4</td>
+            <td>Salón 1</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch5</td>
+            <td>Salón 1</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch6</td>
+            <td>Salón 1</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch7</td>
+            <td>Salón 1</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch8</td>
+            <td>Salón 1</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>PC-PT PC5</td>
+            <td>Salón 1</td>
+            <td>192.168.0.7</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC6</td>
+            <td>Salón 1</td>
+            <td>192.168.0.8</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC7</td>
+            <td>Salón 1</td>
+            <td>192.168.0.9</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC8</td>
+            <td>Salón 1</td>
+            <td>192.168.0.10</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC9</td>
+            <td>Salón 1</td>
+            <td>192.168.0.11</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC10</td>
+            <td>Salón 1</td>
+            <td>192.168.0.12</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC11</td>
+            <td>Salón 1</td>
+            <td>192.168.0.13</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC12</td>
+            <td>Salón 1</td>
+            <td>192.168.0.14</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC13</td>
+            <td>Salón 1</td>
+            <td>192.168.0.15</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC14</td>
+            <td>Salón 1</td>
+            <td>192.168.0.16</td>
+          </tr>
+          <tr>
+            <td>Repeater-PT Repeater1</td>
+            <td>Pasillo</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch9</td>
+            <td>Salón 2</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch10</td>
+            <td>Salón 2</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch11</td>
+            <td>Salón 2</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch12</td>
+            <td>Salón 2</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch13</td>
+            <td>Salón 2</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>PC-PT PC16</td>
+            <td>Salón 2</td>
+            <td>192.168.0.18</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC17</td>
+            <td>Salón 2</td>
+            <td>192.168.0.19</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC18</td>
+            <td>Salón 2</td>
+            <td>192.168.0.20</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC19</td>
+            <td>Salón 2</td>
+            <td>192.168.0.21</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC20</td>
+            <td>Salón 2</td>
+            <td>192.168.0.22</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC21</td>
+            <td>Salón 2</td>
+            <td>192.168.0.23</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC22</td>
+            <td>Salón 2</td>
+            <td>192.168.0.24</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC23</td>
+            <td>Salón 2</td>
+            <td>192.168.0.25</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC24</td>
+            <td>Salón 2</td>
+            <td>192.168.0.26</td>
+          </tr>
+          <tr>
+            <td>Repeater-PT Repeater2</td>
+            <td>Pasillo</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch14</td>
+            <td>Salón 3</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch15</td>
+            <td>Salón 3</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch16</td>
+            <td>Salón 3</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch17</td>
+            <td>Salón 3</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch18</td>
+            <td>Salón 3</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>PC-PT PC25</td>
+            <td>Salón 3</td>
+            <td>192.168.0.27</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC26</td>
+            <td>Salón 3</td>
+            <td>192.168.0.28</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC27</td>
+            <td>Salón 3</td>
+            <td>192.168.0.29</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC28</td>
+            <td>Salón 3</td>
+            <td>192.168.0.30</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC29</td>
+            <td>Salón 3</td>
+            <td>192.168.0.31</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC30</td>
+            <td>Salón 3</td>
+            <td>192.168.0.32</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC31</td>
+            <td>Salón 3</td>
+            <td>192.168.0.33</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC32</td>
+            <td>Salón 3</td>
+            <td>192.168.0.34</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC33</td>
+            <td>Salón 3</td>
+            <td>192.168.0.35</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC34</td>
+            <td>Salón 3</td>
+            <td>192.168.0.36</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC35</td>
+            <td>Salón 3</td>
+            <td>192.168.0.37</td>
+          </tr>
+          <tr>
+            <td>PC-PT PC36</td>
+            <td>Salón 3</td>
+            <td>192.168.0.38</td>
+          </tr>
+        </table>
+      </div>
+      <p></p>
+    </div>
+    <div class="projects container" id="conc">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Con</span>clusión</h1>
+        <p>Utilizando el programa de Packet Tracer de Cisco, se simuló una red de aplicación, 
+          asignando a las computadoras las IP pertenecientes a la red 192.168.0.0, se utilizó 
+          la ventana de comandos con la función ping para verificar la comunicación entre 
+          cada una de las computadoras.</p>
+        <p>Se elaboró un video donde se compruebe el funcionamiento de 5 dispositivos comunicados 
+          entre sí.</p>
+        <p>Se elaboró una tabla comparativa con la distribución física e IP de cada equipo 
+          (computadora, repetidor, switch y router).</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="projects container" id="ref">
+      <div class="projects-header">
+        <h1 class="section-title">Refe<span>re</span>ncias</h1>
+      </div>
+      <p>Devece, C., Guiral, J., & Lapiedra, R. (2011). Introducción a la gestión de sistemas de información en la empresa. Universitat Jaume I.</p>
+      <p>Stair, R., & Reynolds, G. (2010). Principles of Information Systems. Boston: Course Technology</p>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>R</span>edes <span>D</span>igitales de <span>D</span>atos</h1></div>
+      <h2>Portafolio de la materia y el laboratorio</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/steph.lm.568"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/steph_ds99/?hl=es-la"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+
+      </div>
+      <p>Copyright © 2020 Stephano. All rights reserved</p>
+    </div>
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>

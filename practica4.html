@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>RDD</title>
+</head>
+<body>
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#"><h1><span>H</span>ome</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#intro" data-after="Home">Introducción</a></li>
+            <li><a href="#obj" data-after="Service">Objetivos</a></li>
+            <li><a href="#marco" data-after="Projects">Marco</a></li>
+            <li><a href="#desa" data-after="About">Desarrollo</a></li>
+            <li><a href="#conc" data-after="Contact">Conclusión</a></li>
+            <li><a href="#ref" data-after="Contact">Referencias</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Práctica 4<span></span></h1>
+        <h1>Página<span></span></h1>
+        <h1>PHP<span></span></h1>
+        <a href="index.html" type="button" class="cta">Regresar a la materia</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects container" id="intro">
+      <div class="projects-header">
+        <h1 class="section-title"><span>In</span>troducción</h1>
+      </div>
+      <p>Un servidor es un conjunto de computadoras capaz de atender las peticiones de un cliente y devolverle una respuesta en concordancia. Los servidores se pueden ejecutar en cualquier tipo de computadora, incluso en computadoras dedicadas a las cuales se les conoce individualmente como «el servidor». En la mayoría de los casos una misma computadora puede proveer múltiples servicios y tener varios servidores en funcionamiento. La ventaja de montar un servidor en computadoras dedicadas es la seguridad. Por esta razón la mayoría de los servidores son procesos diseñados de forma que puedan funcionar en computadoras de propósito específico.</p>
+    </div>
+    <div class="projects container" id="obj">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Ob</span>jetivos</h1>
+      </div>
+      <p>Objetivo general</p>
+      <p>Conocer, identificar y comprobar el funcionamiento de una página web con programación PHP, en un simulador, un servidor local y envió de datos mediante el explorador.</p>
+      <p>Objetivos específicos</p>
+      <p>Utilizando Replit desarrollar una página web con código PHP que permita actualizar el valor de un sensor. Recuerda guardar el archivo como “index.php”, corrobora su funcionamiento directo desde el explorador. Utilizando tu página Web, inserta el desarrollo en Replit como código embebido en tu reporte de practica en tu página Web y explica los comandos</p>
+      <p>Finalmente utilizando tu servidor local con xammp, desarrolla una página PHP de visualización para 4 sensores que se encuentre directamente en tu página Web, visualízala en el explorador con la dirección IP y corrobora su funcionamiento directo desde el explorador desde otros 2 dispositivos de la red local.</p>
+    </div>
+    <div class="projects container" id="marco">
+      <div class="projects-header">
+        <h1 class="section-title">Mar<span>co</span></h1>
+      </div>
+      <p>PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML.</p>
+      <p>Lo que distingue a PHP de algo del lado del cliente como Javascript es que el código es ejecutado en el servidor, generando HTML y enviándolo al cliente. El cliente recibirá el resultado de ejecutar el script, aunque no se sabrá el código subyacente que era. El servidor web puede ser configurado incluso para que procese todos los ficheros HTML con PHP, por lo que no hay manera de que los usuarios puedan saber qué se tiene debajo de la manga.</p>
+    </div>
+    <div class="projects container" id="desa">
+      <div class="projects-header">
+        <h1 class="section-title">Des<span>a</span>rollo</h1>
+      </div>
+      <p>Desde la aplicación de Replit se realizó un acercamiento a la programación de 
+        PHP. En este primer acercamiento se realizó la codificación del código que 
+        aparece como ejemplo de la práctica</p>
+      <p>Se obtuvo el código siguiente:</p>
+      <!--Insertar ejemplo desde replit-->
+      <iframe height="700px" width="75%" src="https://repl.it/@DiegoVega7/Ejemploprac4?lite=true" scrolling="no" frameborder="1px" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      <p>Una vez familiarizado con la sintaxis básica necesaria para poder programar en
+        PHP, se realizó la codificación de un sensor el cual actualiza su valor y lo 
+        guarda en un archivo txt.</p>
+      <p>Se obtuvo el código siguiente:</p>
+      <!--Insertar ejercicio 1 desde replit-->
+      <iframe height="700px" width="75%" src="https://repl.it/@DiegoVega7/Ejercicio1PHP?lite=true" scrolling="no" frameborder="1px" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      <!--Redactar una lista de los comandos de php usados-->
+      <p>Por último, se replicó la lógica de operación del primer ejercicio para usar 
+        ahora cuatro sensores que se actualicen y guarden sus datos usando un archivo 
+        txt. En esta ocasión se estableció el archivo PHP en un servidor local. Este 
+        archivo se modificó desde dos dispositivos distintos al host y se inicialzó el 
+        archivo txt desde el host.</p>
+      <div class="image-gallery">
+        <div class="img">
+          <img src="images/prac4_1.jpg" alt="Uso de Xampp, habilitando servicios de Apache y MySQL." data-original="prac4_1.jpg">
+        </div>
+        <div class="img">
+          <img src="images/prac4_2.jpg" alt="Posicionamiento del archivo con el código PHP para el 
+          servidor local." data-original="prac4_2.jpg">
+        </div>
+        <div class="img">
+          <img src="images/prac4_3.jpg" alt="Inicializando el servidor en un equipo de la red doméstica 
+          local." data-original="prac4_3.jpg">
+        </div>
+        <div class="img">
+          <img src="images/prac4_4.jpg" alt="Archivo txt inicializado desde el host del servidor 
+          local." data-original="prac4_4.jpg">
+        </div>
+        <div class="img">
+          <img src="images/prac4_5.jpeg" alt="Modificación desde un equipo de la red local." data-original="prac4_5.jpeg">
+        </div>
+        <div class="img">
+          <img src="images/prac4_6.png" alt="Modificación desde un equipo de la red local." data-original="prac4_6.png">
+        </div>
+        <div class="img">
+          <img src="images/prac4_7.jpg" alt="Resultado mostrado desde el equipo host en el txt y el 
+          navegador." data-original="prac4_7.jpg">
+        </div>
+      </div>
+      <div class="modal">
+        <img src="" alt="" class="fullsimg">
+        <p class="caption"></p>
+      </div>
+      <p>Se obtuvo el código siguiente:</p>
+      <!--Insertar ejercicio 2 desde replit-->
+      <iframe height="700px" width="75%" src="https://repl.it/@DiegoVega7/Ejercicio2PHP?lite=true" scrolling="no" frameborder="1px" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    </div>
+    <div class="projects container" id="conc">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Con</span>clusión</h1>
+      </div>
+      <p>Lo que distingue a PHP de algo del lado del cliente como Javascript es que el código es ejecutado en el servidor, generando HTML y enviándolo al cliente. El cliente recibirá el resultado de ejecutar el script, aunque no se sabrá el código subyacente que era. El servidor web puede ser configurado incluso para que procese todos los ficheros HTML con PHP, por lo que no hay manera de que los usuarios puedan saber qué se tiene debajo de la manga.</p>
+      <p>Por otro lado, se realizó otro programa capaz de actualizar uno o cuatro sensores, dependiendo de la petición realizada por el usuario, al igual que el ejemplo anterior se montó un servidor usando xammp.</p>
+    </div>
+    <div class="projects container" id="ref">
+      <div class="projects-header">
+        <h1 class="section-title">Refe<span>re</span>ncias</h1>
+      </div>
+      <p>Devece, C., Guiral, J., & Lapiedra, R. (2011). Introducción a la gestión de sistemas de información en la empresa. Universitat Jaume I.</p>
+      <p>Stair, R., & Reynolds, G. (2010). Principles of Information Systems. Boston: Course Technology</p>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>R</span>edes <span>D</span>igitales de <span>D</span>atos</h1></div>
+      <h2>Portafolio de la materia y el laboratorio</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/steph.lm.568"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/steph_ds99/?hl=es-la"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+
+      </div>
+      <p>Copyright © 2020 Stephano. All rights reserved</p>
+    </div>
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>

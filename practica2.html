@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>RDD</title>
+</head>
+<body>
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href=""><h1><span>H</span>ome</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#intro" data-after="Home">Introducción</a></li>
+            <li><a href="#obj" data-after="Service">Objetivos</a></li>
+            <li><a href="#marco" data-after="Projects">Marco</a></li>
+            <li><a href="#desa" data-after="About">Desarrollo</a></li>
+            <li><a href="#conc" data-after="Contact">Conclusión</a></li>
+            <li><a href="#ref" data-after="Contact">Referencias</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Práctica 2<span></span></h1>
+        <h1>Elementos de una<span></span></h1>
+        <h1>Red Local<span></span></h1>
+        <a href="index.html" type="button" class="cta">Regresar a la materia</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects container" id="intro">
+      <div class="projects-header">
+        <h1 class="section-title"><span>In</span>troducción</h1>
+      </div>
+      <p>Dentro del uso de redes exsisten distintos componentes que, en conjunto, conforman la red local ya sea como nodos de salida, de transmisión, de entrada, etc. Estos componentes, principalmente de hardware, tienen cada uno su función para mantener la transmisión de datos dentro de la red local y hacia una red mayor ya sea internet o alguna red a nivel superior, incluso para extender dicha red local. En esta práctica se ilustran algunos de los elementos más comúnes que participan en las redes locales domésticas y de instituciones.</p>
+    </div>
+    <div class="projects container" id="obj">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Ob</span>jetivos</h1>
+      </div>
+      <p>Objetivo general</p>
+      <p>Conocer, investigar e identificar los elementos que se utilizan para configurar una red local y el acceso a recursos de un equipo en red.</p>
+      <p>Objetivos específicos</p>
+      <p>Utilizando el programa de Packet Tracer de Cisco, simula las siguientes redes de computadora, asignando a las computadoras las IP pertenecientes a la red 192.168.0.0, utilizando la ventana de comandos utiliza la función ping para verificar la comunicación entre cada una de las computadoras. Graba un video de cada red simulada.</p>
+      <p>Elabora por cada red una tabla comparativa de cada elemento de red.</p>
+      <p>Elabora una tabla comparativa evaluando el tipo de cable (cruzado y directo) dependiendo de los dispositivos y como se conectan.</p>
+    </div>
+    <div class="projects container" id="marco">
+      <div class="projects-header">
+        <h1 class="section-title">Mar<span>co</span></h1>
+        <p><b>Estaciones de trabajo: </b>Cada computadora conectada a la red conserva la 
+          capacidad de funcionar de manera independiente, realizando sus propios procesos. 
+          Asimismo, las computadoras se convierten en estaciones de trabajo en red, con acceso 
+          a la información y recursos contenidos en el servidor de archivos de la misma. Una 
+          estación de trabajo no comparte sus propios recursos con otras computadoras. Esta 
+          puede ser desde una PC XT hasta una Pentium, equipada según las necesidades del 
+          usuario; o también de otra arquitectura diferente como Macintosh, Silicon Graphics, 
+          Sun, etc.</p>
+        <p><b>Cableado: </b> La LAN debe tener un sistema de cableado que conecte las estaciones 
+          de trabajo individuales con los servidores de archivos y otros periféricos. Si sólo 
+          hubiera un tipo de cableado disponible, la decisión sería sencilla. Lo cierto es que 
+          hay muchos tipos de cableado, cada uno con sus propios defensores y como existe una 
+          gran variedad en cuanto al costo y capacidad, la selección no debe ser un asunto 
+          trivial.</p>
+          <ol>
+            <li><i>Cable de par trenzado: </i> Es con mucho, el tipo menos caro y más común de 
+              medio de red.</li>
+            <li><i>Cable coaxial: </i>  Es tan fácil de instalar y mantener como el cable de 
+              par trenzado, y es el medio que se prefiere para las LAN grandes.</li>
+            <li><i>Cable de fibra óptica: </i> Tiene mayor velocidad de transmisión que los 
+              anteriores, es inmune a la interferencia de frecuencias de radio y capaz de 
+              enviar señales a distancias considerables sin perder su fuerza. Tiene un costo 
+              mayor.</li>
+          </ol>
+          <p><b>Equipo de conectividad: </b> Por lo general, para redes pequeñas, la longitud 
+            del cable no es limitante para su desempeño; pero si la red crece, tal vez llegue 
+            a necesitarse una mayor extensión de la longitud de cable o exceder la cantidad de 
+            nodos especificada. Existen varios dispositivos que extienden la longitud de la 
+            red, donde cada uno tiene un propósito específico. Sin embargo, muchos dispositivos 
+            incorporan las características de otro tipo de dispositivo para aumentar la 
+            flexibilidad y el valor.</p>
+            <ol>
+              <li><i>Hubs o concentradores: </i>Son un punto central de conexión para nodos de 
+                red que están dispuestos de acuerdo a una topología física de estrella.</li>
+              <li><i>Repetidores: </i>  Un repetidor es un dispositivo que permite extender la 
+                longitud de la red; amplifica y retransmite la señal de red.</li>
+              <li><i>Puentes: </i> Un puente es un dispositivo que conecta dos LAN separadas 
+                para crear lo que aparenta ser una sola LAN.</li>
+              <li><i>Ruteadores: </i> Los ruteadores son similares a los puentes, sólo que 
+                operan a un nivel diferente. Requieren por lo general que cada red tenga el 
+                mismo sistema operativo de red, para poder conectar redes basadas en topologías 
+                lógicas completamente diferentes como Ethernet y Token Ring.</li>
+              <li><i>Compuertas: </i> Una compuerta permite que los nodos de una red se 
+                comuniquen con tipos diferentes de red o con otros dispositivos. Podr´a tenerse, 
+                por ejemplo, una LAN que consista en computadoras compatibles con IBM y otra 
+                con Macintosh.</li>
+            </ol>>
+        <p><b>Packet Tracer</b> de Cisco es un programa de simulación de redes que permite a los 
+          estudiantes experimentar con el comportamiento de la red</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="projects container" id="desa">
+      <div class="projects-header">
+        <h1 class="section-title">Des<span>a</span>rollo</h1>
+        <p>Se realizaron ejemplos en clase en los que se experimentó con los distintos cables 
+          y su comportamiento entre componentes. Se realizaron tres ejercicios en los que se 
+          usan dos computadoras, cable cruzado y cable directo, así como configuraciones 
+          dentro de la misma red local y con dos redes locales distintas</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eT_BuAl3IEY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hmf2RFIcs3o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/53AKuHJo-hY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Se repitió uno de los ejercicios de clase en los que se conecta dos computasdoras 
+          mediante un cable cruzado y se utiliza la función ipconfig para verificar su 
+          dirección IP además de la función ping que envía cierta cantidad de bytes de una 
+          computadora a otra verificando la correcta conexión y comunicación. En este caso 
+          la red local que se configuró es la red con la IP 192.168.0.0</p>
+        <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
+          con una pequeña descripción de los dispositivos utilizados.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PGSYGrSTgOI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <table class="prac" width="90%">
+          <tr>
+            <th>Red</th>
+            <th>Elemento de red</th>
+            <th>Descripción y funcionamiento</th>
+            <th>Imagen</th>
+          </tr>
+          <tr>
+            <td rowspan="2" width="55%"><img src="img/prac2/a.jpg" alt=""></td>
+            <td>PC-PT PC0</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/41.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>PC-PT PC1</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/42.jpg" alt=""></td>
+          </tr>
+        </table>
+        <p>En este ejercicio se añadió un repetidor de señal entre ambos dispositivos y se 
+          usó cable directo para interconectarlos. A diferencia del primer ejercicio, el 
+          cable directo de usó gracias a que son dispositivos de diferente tipo. En este 
+          caso la red local que se configuró es la red con la IP 192.168.0.0</p>
+        <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
+          con una pequeña descripción de los dispositivos utilizados.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/b9Ex4nDRNc4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <table class="prac" width="90%">
+          <tr>
+            <th>Red</th>
+            <th>Elemento de red</th>
+            <th>Descripción y funcionamiento</th>
+            <th>Imagen</th>
+          </tr>
+          <tr>
+            <td rowspan="3" width="55%"><img src="img/prac2/b.jpg" alt=""></td>
+            <td>PC-PT PC0</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/41.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>PC-PT PC1</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/42.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>Repeater-PT Repeater0</td>
+            <td>Es un elemento de hardware que permite concentrar el tráfico de red que proviene de múltiples ordenadores y regenerar la señal.</td>
+            <td><img src="img/prac2/47.jpg" alt=""></td>
+          </tr>
+        </table>
+        <p>En este ejercicio se cambió el repetidor de señal por un switch y se agregó 
+          una tercer computadora. Se usó cable directo para interconectarlos. A diferencia 
+          del primer ejercicio, el cable directo de usó gracias a que son dispositivos de 
+          diferente tipo. En este caso la red local que se configuró es la red con la IP 
+          192.168.0.0</p>
+        <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
+          con una pequeña descripción de los dispositivos utilizados.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hyxB-gPYY2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <table class="prac" width="90%">
+          <tr>
+            <th>Red</th>
+            <th>Elemento de red</th>
+            <th>Descripción y funcionamiento</th>
+            <th>Imagen</th>
+          </tr>
+          <tr>
+            <td rowspan="4" width="55%"><img src="img/prac2/c.jpg" alt=""></td>
+            <td>PC-PT PC0</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/41.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>PC-PT PC1</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/42.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>PC-PT PC2</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/43.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch0</td>
+            <td>Un switch permite a los dispositivos conectados compartir información y comunicarse entre sí.</td>
+            <td><img src="img/prac2/48.jpg" alt=""></td>
+          </tr>
+        </table>
+        <p>La última parte de la práctica ya ilustra una red local con m´s elementos, aquí 
+          se usa un repetidor de señal para conectar dos switches con 3 computadoras cada 
+          uno. Aquí hay un caso especial del uso de cable cruzado entre repetidores y 
+          switches. En este caso la red local que se configuró es la red con la IP 
+          192.168.0.0</p>
+        <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
+          con una pequeña descripción de los dispositivos utilizados.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RnjHoNaV1_w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <table class="prac" width="90%">
+          <tr>
+            <th>Red</th>
+            <th>Elemento de red</th>
+            <th>Descripción y funcionamiento</th>
+            <th>Imagen</th>
+          </tr>
+          <tr>
+            <td rowspan="9" width="55%"><img src="img/prac2/d.jpg" alt=""></td>
+            <td>PC-PT PC0</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/41.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>PC-PT PC1</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/42.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>PC-PT PC2</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/43.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>PC-PT PC3</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/44.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>PC-PT PC4</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/45.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>PC-PT PC5</td>
+            <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+            <td><img src="img/prac2/46.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>Repeater-PT Repeater0</td>
+            <td>Es un elemento de hardware que permite concentrar el tráfico de red que proviene de múltiples ordenadores y regenerar la señal.</td>
+            <td><img src="img/prac2/47.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch0</td>
+            <td>Un switch permite a los dispositivos conectados compartir información y comunicarse entre sí.</td>
+            <td><img src="img/prac2/48.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>Switch-PT Switch1</td>
+            <td>Un switch permite a los dispositivos conectados compartir información y comunicarse entre sí.</td>
+            <td><img src="img/prac2/49.jpg" alt=""></td>
+          </tr>
+        </table>
+        <br>
+        <p>Realización de una tabla comparativa evaluando el tipo de cable (cruzado y directo) dependiendo de 
+          los dispositivos y como se conectan.</p>
+        <table class="prac" width="75%">
+          <tr>
+            <th></th>
+            <th>Computadora</th>
+            <th>Repetidor</th>
+            <th>Switch</th>
+          </tr>
+          <tr>
+            <th>Computadora</th>
+            <td>Cable Cruzado</td>
+            <td>Cable Directo</td>
+            <td>Cable Directo</td>
+          </tr>
+          <tr>
+            <th>Repetidor</th>
+            <td>Cable Directo</td>
+            <td>Cable Cruzado</td>
+            <td>Cable Cruzado</td>
+          </tr>
+          <tr>
+            <th>Switch</th>
+            <td>Cable Directo</td>
+            <td>Cable Cruzado</td>
+            <td>Cable Cruzado</td>
+          </tr>
+        </table>
+      </div>
+      <p></p>
+    </div>
+    <div class="projects container" id="conc">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Con</span>clusión</h1>
+        <p>Utilizando el programa de Packet Tracer de Cisco, se simularon distintas redes de  computadora, asignando a las computadoras las IP pertenecientes a la red 
+          192.168.0.0, utilizando la ventana de comandos se usó la función ping para 
+          verificar la comunicación entre cada una de las computadoras.</p>
+        <p>Se elaboró una tabla comprativa por cada red ilustrando cada elemento de la red.</p>
+        <p>Se elaboró una tabla comparativa evaluando el tipo de cable (cruzado y directo) 
+          dependiendo de los dispositivos y como se conectan.</p>
+      </div>
+      <p></p>
+    </div>
+    <div class="projects container" id="ref">
+      <div class="projects-header">
+        <h1 class="section-title">Refe<span>re</span>ncias</h1>
+      </div>
+      <p>Devece, C., Guiral, J., & Lapiedra, R. (2011). Introducción a la gestión de sistemas de información en la empresa. Universitat Jaume I.</p>
+      <p>Stair, R., & Reynolds, G. (2010). Principles of Information Systems. Boston: Course Technology</p>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>R</span>edes <span>D</span>igitales de <span>D</span>atos</h1></div>
+      <h2>Portafolio de la materia y el laboratorio</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/steph.lm.568"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/steph_ds99/?hl=es-la"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+
+      </div>
+      <p>Copyright © 2020 Stephano. All rights reserved</p>
+    </div>
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>
