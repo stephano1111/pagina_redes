@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>RDD</title>
+</head>
+<body>
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#"><h1><span>H</span>ome</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#intro" data-after="Home">Introducción</a></li>
+            <li><a href="#obj" data-after="Service">Objetivos</a></li>
+            <li><a href="#marco" data-after="Projects">Marco</a></li>
+            <li><a href="#desa" data-after="About">Desarrollo</a></li>
+            <li><a href="#conc" data-after="Contact">Conclusión</a></li>
+            <li><a href="#ref" data-after="Contact">Referencias</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Práctica 7<span></span></h1>
+        <h1>Wifi ESP8266 request<span></span></h1>
+        <h1>Página PHP<span></span></h1>
+        <a href="index.html" type="button" class="cta">Regresar a la materia</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects container" id="intro">
+      <div class="projects-header">
+        <h1 class="section-title"><span>In</span>troducción</h1>
+      </div>
+      <p>HTTP es un protocolo basado en el principio de cliente-servidor: las peticiones son enviadas por una entidad: el agente del usuario (o un proxy a petición de uno). La mayoría de las veces el agente del usuario (cliente) es un navegador Web, pero podría ser cualquier otro programa, como por ejemplo un programa-robot, que explore la Web, para adquirir datos de su estructura y contenido para uso de un buscador de Internet.</p>
+      <p>HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados HTTP verbs.</p>
+    </div>
+    <div class="projects container" id="obj">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Ob</span>jetivos</h1>
+      </div>
+      <p>Objetivo general</p>
+      <p>Conocer, identificar y comprobar el funcionamiento de las entradas y salidas digitales en el módulo Wifi ESP8266.</p>
+      <p>Objetivos específicos</p>
+      <p>Utilizando el ejemplo de Thingspeak, desarrollar un sistema que mediante un botón conectado al NodeMCU enviemos un 1 al apretar el botón y un 0 al soltarlo.</p>
+    </div>
+    <div class="projects container" id="marco">
+      <div class="projects-header">
+        <h1 class="section-title">Mar<span>co</span></h1>
+      </div>
+      <p>El ESP8266 es un chip Wi-Fi de bajo coste con pila TCP/IP completa y capacidad de MCU (Micro Controller Unit) 
+        producida por el fabricante chino Espressif Systems, con sede en Shanghai. El chip primero llegó a la atención de los 
+        fabricantes occidentales en agosto de 2014 con el módulo ESP-01. El ESP8266 tiene potentes capacidades a bordo de 
+        procesamiento y almacenamiento que le permiten integrarse con sensores y dispositivos específicos de aplicación a través 
+        de sus GPIOs con un desarrollo mínimo y carga mínima durante el tiempo de ejecución. Su alto grado de integración en el 
+        chip permite una circuitería externa mínima, y la totalidad de la solución, incluyendo el módulo está diseñado para 
+        ocupar el área mínima en un PCB.</p>
+        <p><b>GET: </b>El método GET  solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.</p>
+        <p><b>POST: </b>El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.</p>
+    </div>
+    <div class="projects container" id="desa">
+      <div class="projects-header">
+        <h1 class="section-title">Des<span>a</span>rollo</h1>
+      </div>
+      <p>Se realizó el envío de la lectura de los sensores usando internet a la página php creada en la práctica 4, funciona con una latencia de 5 segundos para evitar sobrecargar el sistema de dentro de 000webhost y el NodeMCU. Se envía el dato 0 desde cada sensor si el botón no está presionado y el dato 1 si está presionado.</p>
+      <iframe src=https://create.arduino.cc/editor/diegovegadeita/1ea563aa-1465-4988-a8f0-02822d514f03/preview?embed style="height:1300px;width:60%;margin:20px;float:right;" frameborder=0></iframe>
+      <p>Las librerías empleadas son las tres primeras lineas de código, todas están comentadas dentro del recuadro de la derecha. La librería ESP8266WiFi.h permite la conexion del NodeMCU a la red Wifi Local que se desee. La librería WiFiClient.h  permite configurar el NodeMCU en modo cliente. La librería ESP8266HTTPClient.h cotiene las funciones de envío de request tipo POST y GET cuando el NodeMCU está en modo cliente.</p>
+      <p>En la función setup se establecen los GPIO del NodeMCU como entrada, en los comentrios del código se especifican, se habilita el serial y se usa la función conecta wifi.</p>
+      <p>La función conectawifi imprime en el monitor serial el estado de la conexión wifi, imprime puntos mientras conecta la red y la información de la red una vez que se conecte de forma satisfactoria a la red deseada.</p>
+      <p>La función enviar dato contstruye el dato para enviarlo desde un request de tipo GET a la aplicación de thingspeak con las credenciales mencionadas en el código previamente, si el wifi no está conectado al dispositivo entonces imprime un texto en el monitor serial</p>
+      <p>En el loop se valida si el botón está presionado, si está presionado se usa la función enviar dato para enviar un "1"; si no lo está, se envía un 0, en cada sensor se tiene un botón por lo que envía ceros y unos según los botónes presionados.</p>
+      <p>Para ver la página PHP puede ingresar al siguiente link: <a href="http://diegovega.000webhostapp.com/php/">http://diegovega.000webhostapp.com/php/</a></p>
+      <br>
+      <p>El esquema de la conexión de los botónes se muestra en el siguiente frame. Los colores de los cables que no conectan a algo van a ciertos pines del NodeMCU con el siguiente código: naranja-GPIO4, blanco-GPIO15, verde-GPIO14 y morado-GPIO5</p>
+      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/jBrNkTNZtAz?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      <img src="img/prac7_1.png" alt="">
+      <img src="img/prac7_2.png" alt="">
+      <img src="img/prac7_3.jpg" alt="">
+    </div>
+    <div class="projects container" id="conc">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Con</span>clusión</h1>
+      </div>
+      <p>El ejercicio hace una conexión con la página PHP realizada para la lectura de cuatro sensores con datos enviados desde unos botones mediante el método GET</p>
+          <p>Se logró la conexión del NodeMCU a una red wifi por la que hizo viajar el dato a través de internet hacia la página PHP</p>
+    </div>
+    <div class="projects container" id="ref">
+      <div class="projects-header">
+        <h1 class="section-title">Refe<span>re</span>ncias</h1>
+      </div>
+      <p>Devece, C., Guiral, J., & Lapiedra, R. (2011). Introducción a la gestión de sistemas de información en la empresa. Universitat Jaume I.</p>
+      <p>Stair, R., & Reynolds, G. (2010). Principles of Information Systems. Boston: Course Technology</p>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>R</span>edes <span>D</span>igitales de <span>D</span>atos</h1></div>
+      <h2>Portafolio de la materia y el laboratorio</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/steph.lm.568"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/steph_ds99/?hl=es-la"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+
+      </div>
+      <p>Copyright © 2020 Stephano. All rights reserved</p>
+    </div>
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>

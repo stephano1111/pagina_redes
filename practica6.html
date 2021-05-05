@@ -32,9 +32,9 @@
   <section id="hero">
     <div class="hero container">
       <div>
-        <h1>Práctica <span></span></h1>
-        <h1><span></span></h1>
-        <h1><span></span></h1>
+        <h1>Práctica 6<span></span></h1>
+        <h1>Wifi ESP8266<span></span></h1>
+        <h1>Entradas y Salidas Digitales<span></span></h1>
         <a href="index.html" type="button" class="cta">Regresar a la materia</a>
       </div>
     </div>
@@ -45,34 +45,81 @@
       <div class="projects-header">
         <h1 class="section-title"><span>In</span>troducción</h1>
       </div>
-      <p></p>
+      <p>HTTP es un protocolo basado en el principio de cliente-servidor: las peticiones son enviadas por una entidad: el agente del usuario (o un proxy a petición de uno). La mayoría de las veces el agente del usuario (cliente) es un navegador Web, pero podría ser cualquier otro programa, como por ejemplo un programa-robot, que explore la Web, para adquirir datos de su estructura y contenido para uso de un buscador de Internet.</p>
+            <p>HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados HTTP verbs.</p>
     </div>
     <div class="projects container" id="obj">
       <div class="projects-header">
         <h1 class="section-title"><span>Ob</span>jetivos</h1>
       </div>
       <p>Objetivo general</p>
-      <p></p>
+      <p>Conocer, identificar y comprobar el funcionamiento de las entradas y salidas digitales en el módulo Wifi ESP8266.</p>
       <p>Objetivos específicos</p>
-      <p></p>
+      <p>Utilizando la información e instrucciones de la presentación, configurar el IDE de Arduino para poder programar el 
+        NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias: 
+        <a href="http://arduino.esp8266.com/stable/package_esp8266com_index.json">http://arduino.esp8266.com/stable/package_
+          esp8266com_index.json</a></p>
+      <p>Desarrollar un programa de encendido de un LED mediante programación.</p>
+      <p>Desarrollar un programa de apagado de un LED mediante programación.</p>
+      <p>Desarrollar un programa de encendido y apagado de un LED mediante retardos.</p>
+      <p>Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones.</p>
+      <p>Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR.</p>
+      <p>Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.</p>
+      <p>Utilizando el ejemplo de Thingspeak, desarrollar un sistema que mediante un botón conectado al NodeMCU enviemos un 1 al apretar el botón y un 0 al soltarlo.</p>
     </div>
     <div class="projects container" id="marco">
       <div class="projects-header">
         <h1 class="section-title">Mar<span>co</span></h1>
       </div>
-      <p></p>
+      <p>El ESP8266 es un chip Wi-Fi de bajo coste con pila TCP/IP completa y capacidad de MCU (Micro Controller Unit) 
+        producida por el fabricante chino Espressif Systems, con sede en Shanghai. El chip primero llegó a la atención de los 
+        fabricantes occidentales en agosto de 2014 con el módulo ESP-01. El ESP8266 tiene potentes capacidades a bordo de 
+        procesamiento y almacenamiento que le permiten integrarse con sensores y dispositivos específicos de aplicación a través 
+        de sus GPIOs con un desarrollo mínimo y carga mínima durante el tiempo de ejecución. Su alto grado de integración en el 
+        chip permite una circuitería externa mínima, y la totalidad de la solución, incluyendo el módulo está diseñado para 
+        ocupar el área mínima en un PCB.</p>
+      <p><b>GET: </b>El método GET  solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.</p>
+      <p><b>POST: </b>El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.</p>
     </div>
     <div class="projects container" id="desa">
       <div class="projects-header">
         <h1 class="section-title">Des<span>a</span>rollo</h1>
       </div>
-      <p></p>
+      <p>La carga de firmware ya no fue necesaria en esta práctica, a continuación se muestran los códigos usados para cada objetivo, el último código se explicará más a profundidad que los otros al ser un poco más extenso. La carga de archivos necesitó de habilitar dicha carga desde terminal, habilitando a /dev/ttyUSB0 permisos de lectura y escrutira con el comando siguiente: sudo chmod a+rw /dev/ttyUSB0</p>
+      <iframe src=https://create.arduino.cc/editor/diegovegadeita/5f5068cd-b501-4e6f-9444-bcebcf01c87d/preview?embed style="height:300px;width:60%;margin:20px; float:right;" frameborder=0></iframe>
+      <p style="margin-top: 10%;">Este código es el primer código cargado al NodeMCU, su función es encender un led conectado en el pin D3 del dispositivo, no recibe entradas</p>
+      <iframe src=https://create.arduino.cc/editor/diegovegadeita/03ffb138-e682-44b3-8688-2fdc9c5530e0/preview?embed style="height:300px;width:60%;margin:20px; float:left;" frameborder=0></iframe>
+      <p style="margin-top: 15%;"> Este código, contrario al anterior, funciona para apagar el led en la salida del pin D3 des dispositivo, comparte con el código anterior el no tener entradas.</p>
+      <iframe src=https://create.arduino.cc/editor/diegovegadeita/af7fa3b8-1b8c-4dd0-bb91-e7b86a87ab9b/preview?embed style="height:350px;width:60%;margin:20px; float:right;" frameborder=0></iframe>
+      <p style="margin-top: 17%;">Este código combina los dos anteriores, usa la función delay para mantener encendido el led durante 1s y apagado 1s, el pin sigue siendo D3 y el código carece de entradas.</p>
+      <iframe src=https://create.arduino.cc/editor/diegovegadeita/a7bfc6d1-7105-4f1c-a56e-e1c9266afd1b/preview?embed style="height:350px;width:60%;margin:20px; float:left;" frameborder=0></iframe>
+      <p style="margin-top: 17%;">El código presente hace encender un led el mismo tiempo que se presiona un botón, si el botón está presionado el led está encendido, si el botón no está presionado el led está apagado, la salida sigue siendo el puerto D3 y la entrada, en este caso es S3</p>
+      <iframe src=https://create.arduino.cc/editor/diegovegadeita/49919cea-ac8a-4d0c-914e-b4bc85b169b7/preview?embed style="height:350px;width:60%;margin:20px; float:right;" frameborder=0></iframe>
+      <p style="margin-top: 17%;" >Para este código y en el armado del cirtuito se usaron dos botones, desde los pines S3 y S2, la salida sigue siendo D3, en este caso, el led se enciende solo si ambos botones se encuentran presionados, de lo contrario, permanece apagado</p>
+      <iframe src=https://create.arduino.cc/editor/diegovegadeita/d0c3a6f3-0441-48bb-8a17-de0a7705bd9a/preview?embed style="height:350px;width:60%;margin:20px; float:left;" frameborder=0></iframe>
+      <p style="margin-bottom: 15%; margin-top: 17%;">En este caso, el código y el armado es el mismo que el del ejemplo anterior, solo cambia la función del condicional, en la que pasa de un and a un or (&& a ||) por lo que, el led enciende si algún botón está presionado</p>
+      <p>El diagrama seguido para el armado es el siguente, sin embargo, por falta de espacio se tuvo que realizar ciertos cambios, los pines quedaron igual que el esquema de clase pero se cablearon solo los pines necesarios para el funcionamiento del NodeMCU, al no poder colocar el circuito entero en la placa</p>
+      <img src="img/prac6_1.png" alt="">
+      <img src="img/prac6_2.jpeg" alt="">
+      <img src="img/prac6_3.jpeg" alt="">
+      <img src="img/prac6_4.jpeg" alt="">
+      <p>En el último código, se realizó el envío de un dato usando internet a la plataforma ThingSpeak, funciona con una latencia de 5 segundos para evitar sobrecargar el sistema de Thingspeak y el NodeMCU. Se envía el dato 0 si el botón no está presionado y el dato 100 si está presionado.</p>
+      <iframe src=https://create.arduino.cc/editor/diegovegadeita/b9136010-7299-42ce-9c27-62809ce133a1/preview?embed style="height:1300px;width:60%;margin:20px;float:right;" frameborder=0></iframe>
+      <p>Para este código hubo bastantes añadidos respecto a los anteriores, las librerías empleadas son las tres primeras lineas de código, todas están comentadas dentro del recuadro de la derecha. La librería ESP8266WiFi.h permite la conexion del NodeMCU a la red Wifi Local que se desee. La librería WiFiClient.h  permite configurar el NodeMCU en modo cliente. La librería ESP8266HTTPClient.h cotiene las funciones de envío de request tipo POST y GET cuando el NodeMCU está en modo cliente.</p>
+      <p>En la función setup se establece el pin S3 como entrada, se habilita elserial y se usa la función conecta wifi.</p>
+      <p>La función conectawifi imprime en el monitor serial el estado de la conexión wifi, imprime puntos mientras conecta la red y la información de la red una vez que se conecte de forma satisfactoria a la red deseada.</p>
+      <p>La función enviar dato contstruye el dato para enviarlo desde un request a la aplicación de thingspeak con las credenciales mencionadas en el código previamente, si el wifi no está conectado al dispositivo entonces imprime un texto en el monitor serial</p>
+      <p>En el loop se valida si el botón está presionado, si está presionado se usa la función enviar dato para enviar un "100"; si no lo está, se envía un 0</p>
+      <img src="img/prac6_5.png" alt="">
+      <img src="img/prac6_6.png" alt="">
     </div>
     <div class="projects container" id="conc">
       <div class="projects-header">
         <h1 class="section-title"><span>Con</span>clusión</h1>
       </div>
-      <p></p>
+      <p>Se realizaron los códigos básicos de arduino con relación a la operación del NodeMCU de forma interna, como un lector de los sensores (botónes)</p>
+          <p>Además, el ejercicio final hace una conexión con la plataforma ThingSpeak en un tablero realizado para la lectura del dato enviado desde un botón mediante el método POST</p>
+          <p>Se logró la conexión del NodeMCU a una red wifi por la que hizo viajar el dato a través de internet hacia la plataforma ThingSpeak</p>
     </div>
     <div class="projects container" id="ref">
       <div class="projects-header">
