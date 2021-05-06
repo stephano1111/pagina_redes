@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>RDD</title>
+</head>
+<body>
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#"><h1><span>H</span>ome</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Protocolos de<span></span></h1>
+        <h1>Comunicación<span></span></h1>
+        <h1>Ejercicios Arduinos<span></span></h1>
+        <a href="index.html" type="button" class="cta">Regresar a la materia</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects container-prac" id="intro">
+      <div class="projects-header">
+        <h1 class="section-title">Comunicación <span>Serial</span></h1>
+      </div>
+      <p>La comunicación serie o comunicación secuencial, 
+        en telecomunicaciones e informática, es el proceso 
+        de envío de datos de un bit a la vez, de forma secuencial, 
+        sobre un canal de comunicación o un bus. A lo largo de las 
+        prácticas realizadas se irá construyendo por partes la comunicación
+        serial usando dos arduinos y la herramienta Tinkercad</p>
+      <div class="projects-header">
+        <h1 class="section-title">Contador <span>Pulsos</span></h1>
+      </div>
+      <p>La primer parte de esta serie trata de crear dos funciones, una para el primer arduino que permita enviar una serie de pulsos a cierta frecuencia, y otra para el segundo arduino que permita leer dichos pulsos (Variación de 0 a 1) y contarlos. Los resultados se muestran en el monitor serial y se puede contar los pulsos por segundo hasta por milisegundo.</p>
+      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/46k4RsBqzOh?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      <div class="projects-header">
+        <h1 class="section-title">Contador <span>Tiempo</span></h1>
+      </div>
+      <p>La segunda parte consiste en crear dos funciones, una que permita enviar un pulso por un tiempo determinado que se encuentra en el primer arduino y la segunda que permita leer la cantidad de tiempo que duró ese pulso, esta segunda función se encuentra en el segundo arduino.</p>
+      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/iUUTlEvyZtZ?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      <div class="projects-header">
+        <h1 class="section-title">Convertidor a <span>Binario</span></h1>
+      </div>
+      <p>La tercera parte de la serie de ejercicios trata de crear una función para un primer arduino que permita leer el valor de un potenciómetro y que pueda se representado en binario en un arreglo de 8 bits, cada bit debe de poder ser envíado por un puerto del arduino. La segunda función dentro del arduino numero dos, realiza la lectura de los bits enviados por el primer arduino en ocho de sus puertos y los debe transformar en numeros enteros para poder visualizarlos desde consola.</p>
+      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/59VIRpqHEqN?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      <div class="projects-header">
+        <h1 class="section-title">Comunicación <span>Asíncrona</span></h1>
+      </div>
+      <p>La parte final del ejercicio consiste en elaborar crear una función para un primer arduino que permita leer el valor de un potenciómetro y que pueda se representado en binario en un arreglo de 8 bits un código de programación que permita enviar los bits del arreglo en orden y en serie siguiendo las siguientes características:</p>
+      <p>Iniciar el envió de los datos siempre con una señal HIGH (En total se enviarán 9 datos, el primer bit en HIGH y posteriormente los 8 bits de información).</p>
+      <p>Enviar los datos con una duración del pulso predeterminada, ejemplo 1000 ms.</p>
+      <p>Enviar siempre la misma cantidad de bits.</p>
+      <p>Utilizando un segundo Arduino, diseñar una función que permita adquirir el valor en bits de la señal de comunicación del Arduino anterior, la procese y la convierte en un dato decimal que finalmente enviara al monitor serial.</p>
+      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/jLuj0Jg8yaZ?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    </div>
+
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>R</span>edes <span>D</span>igitales de <span>D</span>atos</h1></div>
+      <h2>Portafolio de la materia y el laboratorio</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/steph.lm.568"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/steph_ds99/?hl=es-la"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+
+      </div>
+      <p>Copyright © 2020 Stephano. All rights reserved</p>
+    </div>
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>
