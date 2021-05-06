@@ -19,6 +19,11 @@ a {
 	align-items: center;
 	justify-content: center;
 }
+
+.container-prac {
+	min-height: 100vh;
+}
+
 img {
 	height: 100%;
 	width: 100%;
@@ -772,3 +777,30 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+
+div.imagenes-prac{
+	width: 100%;
+	height: 300px;
+	display:flex;
+}
+
+div.gallery{
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 20%;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: 190px;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}

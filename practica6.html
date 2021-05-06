@@ -48,7 +48,7 @@
       <p>HTTP es un protocolo basado en el principio de cliente-servidor: las peticiones son enviadas por una entidad: el agente del usuario (o un proxy a petición de uno). La mayoría de las veces el agente del usuario (cliente) es un navegador Web, pero podría ser cualquier otro programa, como por ejemplo un programa-robot, que explore la Web, para adquirir datos de su estructura y contenido para uso de un buscador de Internet.</p>
             <p>HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados HTTP verbs.</p>
     </div>
-    <div class="projects container" id="obj">
+    <div class="projects container-prac" id="obj">
       <div class="projects-header">
         <h1 class="section-title"><span>Ob</span>jetivos</h1>
       </div>
@@ -67,7 +67,7 @@
       <p>Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.</p>
       <p>Utilizando el ejemplo de Thingspeak, desarrollar un sistema que mediante un botón conectado al NodeMCU enviemos un 1 al apretar el botón y un 0 al soltarlo.</p>
     </div>
-    <div class="projects container" id="marco">
+    <div class="projects container-prac" id="marco">
       <div class="projects-header">
         <h1 class="section-title">Mar<span>co</span></h1>
       </div>
@@ -81,7 +81,7 @@
       <p><b>GET: </b>El método GET  solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.</p>
       <p><b>POST: </b>El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.</p>
     </div>
-    <div class="projects container" id="desa">
+    <div class="projects container-prac" id="desa">
       <div class="projects-header">
         <h1 class="section-title">Des<span>a</span>rollo</h1>
       </div>
@@ -99,10 +99,36 @@
       <iframe src=https://create.arduino.cc/editor/diegovegadeita/d0c3a6f3-0441-48bb-8a17-de0a7705bd9a/preview?embed style="height:350px;width:60%;margin:20px; float:left;" frameborder=0></iframe>
       <p style="margin-bottom: 15%; margin-top: 17%;">En este caso, el código y el armado es el mismo que el del ejemplo anterior, solo cambia la función del condicional, en la que pasa de un and a un or (&& a ||) por lo que, el led enciende si algún botón está presionado</p>
       <p>El diagrama seguido para el armado es el siguente, sin embargo, por falta de espacio se tuvo que realizar ciertos cambios, los pines quedaron igual que el esquema de clase pero se cablearon solo los pines necesarios para el funcionamiento del NodeMCU, al no poder colocar el circuito entero en la placa</p>
-      <img src="img/prac6_1.png" alt="">
+      <div class="imagenes-prac">
+        <div class="gallery">
+          <a target="_blank" href="img/prac6_1.png">
+            <img src="img/prac6_1.png" alt="" width="40%" height="85%">
+          </a>
+          <div class="desc">Esquema de armado del circuito</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="img/prac6_2.jpeg">
+            <img src="img/prac6_2.jpeg" alt="" width="600" height="400">
+          </a>
+          <div class="desc">Circuito armado</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="img/prac6_3.jpeg">
+            <img src="img/prac6_3.jpeg" alt="" width="600" height="400">
+          </a>
+          <div class="desc">Circuito armado</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="img/prac6_4.jpeg">
+            <img src="img/prac6_4.jpeg" alt="" width="600" height="400">
+          </a>
+          <div class="desc">Circuito armado y en funcionamiento</div>
+        </div>
+      </div>
+      <!--img src="img/prac6_1.png" alt="">
       <img src="img/prac6_2.jpeg" alt="">
       <img src="img/prac6_3.jpeg" alt="">
-      <img src="img/prac6_4.jpeg" alt="">
+      <img src="img/prac6_4.jpeg" alt=""-->
       <p>En el último código, se realizó el envío de un dato usando internet a la plataforma ThingSpeak, funciona con una latencia de 5 segundos para evitar sobrecargar el sistema de Thingspeak y el NodeMCU. Se envía el dato 0 si el botón no está presionado y el dato 100 si está presionado.</p>
       <iframe src=https://create.arduino.cc/editor/diegovegadeita/b9136010-7299-42ce-9c27-62809ce133a1/preview?embed style="height:1300px;width:60%;margin:20px;float:right;" frameborder=0></iframe>
       <p>Para este código hubo bastantes añadidos respecto a los anteriores, las librerías empleadas son las tres primeras lineas de código, todas están comentadas dentro del recuadro de la derecha. La librería ESP8266WiFi.h permite la conexion del NodeMCU a la red Wifi Local que se desee. La librería WiFiClient.h  permite configurar el NodeMCU en modo cliente. La librería ESP8266HTTPClient.h cotiene las funciones de envío de request tipo POST y GET cuando el NodeMCU está en modo cliente.</p>
@@ -110,10 +136,24 @@
       <p>La función conectawifi imprime en el monitor serial el estado de la conexión wifi, imprime puntos mientras conecta la red y la información de la red una vez que se conecte de forma satisfactoria a la red deseada.</p>
       <p>La función enviar dato contstruye el dato para enviarlo desde un request a la aplicación de thingspeak con las credenciales mencionadas en el código previamente, si el wifi no está conectado al dispositivo entonces imprime un texto en el monitor serial</p>
       <p>En el loop se valida si el botón está presionado, si está presionado se usa la función enviar dato para enviar un "100"; si no lo está, se envía un 0</p>
-      <img src="img/prac6_5.png" alt="">
-      <img src="img/prac6_6.png" alt="">
+      <div class="imagenes-prac">
+        <div class="gallery">
+          <a target="_blank" href="img/prac6_5.png">
+            <img src="img/prac6_5.png" alt="" width="40%" height="85%">
+          </a>
+          <div class="desc">Monitor serie</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="img/prac6_6.png">
+            <img src="img/prac6_6.png" alt="" width="600" height="400">
+          </a>
+          <div class="desc">Recibimiento de varias instancias en tablero personal</div>
+        </div>
+      </div>
+      <!--img src="img/prac6_5.png" alt="">
+      <img src="img/prac6_6.png" alt=""-->
     </div>
-    <div class="projects container" id="conc">
+    <div class="projects container-prac" id="conc">
       <div class="projects-header">
         <h1 class="section-title"><span>Con</span>clusión</h1>
       </div>
